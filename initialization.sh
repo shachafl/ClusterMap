@@ -1,6 +1,12 @@
 #!/bin/bash
 
 ### This script sets the packages needed to run ClusterMap pipeline using python3.8 venv
+
+### in your project folder run the command below. venv will create a virtual Python installation in the env folder.
+python3 -m venv ClusterMap_env
+
+### Activating a virtual environment will put the virtual environment-specific python and pip executables into your shell’s PATH.
+source ClusterMap_env/bin/activate
  
 ### Make sure pip, setuptools and wheel are up to date as we need them for 
 python3 -m pip install --upgrade pip setuptools wheel
